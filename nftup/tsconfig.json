@@ -10,5 +10,6 @@
      "moduleResolution": "Node",
      "lib": [ "dom", "dom.iterable", "esnext" ],
    },
-   "exclude": ["node_modules"],
+   "include": ["assets"],
+   "exclude": ["node_modules", "public"],
 }
