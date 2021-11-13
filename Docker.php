@@ -8,5 +8,5 @@ RUN apt update \
 && docker-php-ext-configure zip \
 && docker-php-ext-install zip
 
-COPY ./app /usr/src/myapp
+COPY ./nftup /usr/src/myapp
 WORKDIR /usr/src/myapp

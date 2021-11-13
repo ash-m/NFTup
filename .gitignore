@@ -13,13 +13,8 @@ typechain
 vendor
 node_modules
 
-# ignore build folder
-app/public
-
 # secrets
-.env
 *.txt
-*.env
 
 # test files
 .phpunit.result.cache
