@@ -9,7 +9,8 @@
      "allowJs": true,
      "moduleResolution": "Node",
      "lib": [ "dom", "dom.iterable", "esnext" ],
+     "outDir": "./build"
    },
    "include": ["assets"],
-   "exclude": ["node_modules", "public"],
+   "exclude": ["node_modules", "public", "assets/types"],
 }
