@@ -1,0 +1,28 @@
+#Hardhat files
+cache
+artifacts
+
+# typechain
+typechain
+
+# ignore ide files
+.devcontainer
+.vscode
+
+# ignore packages
+vendor
+node_modules
+
+# ignore build folder
+app/public
+
+# secrets
+.env
+*.txt
+*.env
+
+# test files
+.phpunit.result.cache
+*.bak
+*.bk
+*.cache
