@@ -59,7 +59,9 @@ Encore
   .enableSassLoader()
 
   // uncomment if you use TypeScript
-  .enableTypeScriptLoader()
+  .enableTypeScriptLoader(function (tsConfig) {
+    appendTsSuffixTo: [/\.vue$/];
+  })
 
   // uncomment if you use Vue
   .enableVueLoader();

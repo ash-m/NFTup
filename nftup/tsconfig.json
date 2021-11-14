@@ -7,10 +7,19 @@
      "typeRoots" : ["node_modules/@types", "assets/types"],
      "strict": true,
      "allowJs": true,
+     "noImplicitReturns": true,
+     "importHelpers": true,
+     "jsx": "preserve",
+     "esModuleInterop": true,
      "moduleResolution": "Node",
      "lib": [ "dom", "dom.iterable", "esnext" ],
-     "outDir": "./build"
+     "outDir": "./build",
+     "downlevelIteration": true,
+     "skipLibCheck": true,
+     "paths":{
+       "@/*":["./assets/*"]
+     },
    },
    "include": ["assets"],
-   "exclude": ["node_modules", "public", "assets/types"],
+   "exclude": ["node_modules", "public"],
 }
