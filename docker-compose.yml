@@ -1,5 +1,6 @@
 version: "3"
 services:
+
   reverse-proxy:
     container_name: reverse-proxy
     build:
@@ -10,17 +11,16 @@ services:
     restart: always
     depends_on:
       - php
-  php-composer:
-    image: "composer"
-    volumes:
-      - "./nftup:/app"
-    command: install
+
   php: # port 9000
     container_name: php
     build:
       dockerfile: Dockerfile.php
       depends_on:
         - db
+    volumes:
+      - ./nftup:/usr/src/myapp
+
   db: # port 3306
     container_name: db
     image: mysql:8.0
